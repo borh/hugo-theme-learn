@@ -19,7 +19,7 @@
 .button:active, .button-secondary:active {
     margin: 2px 0 -2px 0;
 }
-@font-face {
+/* @font-face {
     font-family: 'Novacento Sans Wide';
     src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot");
     src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-UltraLight-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-UltraLight-webfont.svg#novecento_sans_wideultralight") format("svg");
@@ -38,6 +38,7 @@
     font-weight: 500;
     src: url("../fonts/Work_Sans_500.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans_500.woff") format("woff"), url("../fonts/Work_Sans_500.woff2") format("woff2"), url("../fonts/Work_Sans_500.svg#WorkSans") format("svg"), url("../fonts/Work_Sans_500.ttf") format("truetype");
 }
+*/
 body {
     background: #fff;
     color: #777;
@@ -465,7 +466,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #222;
-    font-weight: 200;
+    /*font-weight: 200;*/
 }
 blockquote {
     border-left: 10px solid #F0F2F4;
