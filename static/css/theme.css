@@ -418,8 +418,8 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 #chapter {
     display: flex;
-    /*align-items: center;
-    justify-content: center;*/
+    align-items: center;
+    justify-content: center;
     height: 100%;
     padding: 2rem 0;
 }
