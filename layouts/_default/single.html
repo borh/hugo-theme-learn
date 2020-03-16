@@ -5,9 +5,13 @@
 {{ $reAltOut := "<figure><img src=\"$1\" alt=\"$2\"><figcaption>$2</figcaption></figure>" }}
 {{ $altContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}
 
+{{ $reaAltIn := "<p><a[^>]*><img src=\"([^\"]+)\" alt=\"([^\"]+)\" /></a></p>" }}
+{{ $reaAltOut := "<figure><img src=\"$1\" alt=\"$2\"><figcaption>$2</figcaption></figure>" }}
+{{ $aaltContent := $altContent | replaceRE $reaAltIn $reaAltOut | safeHTML }}
+
 {{ $reAltTitleIn := "<p><img src=\"([^\"]+)\" alt=\"([^\"]+)\" title=\"([^\"]+)\" /></p>" }}
 {{ $reAltTitleOut := "<figure><img src=\"$1\" alt=\"$2\" title=\"$3\"><figcaption>$2</figcaption></figure>" }}
-{{ $finalContent := $altContent | replaceRE $reAltTitleIn $reAltTitleOut | safeHTML }}
+{{ $finalContent := $aaltContent | replaceRE $reAltTitleIn $reAltTitleOut | safeHTML }}
 
 {{ $finalContent }}
 
