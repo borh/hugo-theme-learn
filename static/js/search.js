@@ -22,7 +22,7 @@ function initLunr() {
 			lunrIndex = lunr(function() {
 				this.use(lunr.ja);
 				this.ref("uri");
-				this.field('menuTitle', {
+				this.field('title', {
 					boost: 15
 				});
 				this.field("content", {

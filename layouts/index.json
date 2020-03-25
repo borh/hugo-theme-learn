@@ -3,7 +3,7 @@
 {{- if and $index (gt $index 0) -}},{{- end }}
 {
 	"uri": "{{ $page.Permalink }}",
-	"title": "{{ htmlEscape $page.Title}}",
+	"title": "{{ htmlEscape $page.menuTitle}}",
 	"tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag| htmlEscape }}"{{ end }}],
 	"description": "{{ htmlEscape .Description}}",
 	"content": {{$page.Plain | jsonify}}
