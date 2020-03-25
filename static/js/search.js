@@ -16,7 +16,11 @@ function initLunr() {
             pagesIndex = index;
             // Set up lunrjs by declaring the fields we use
             // Also provide their boost level for the ranking
+	    stemmerSupport(lunr);
+	    TinySegmenter(lunr);
+	    ja(lunr);
             lunrIndex = lunr(function() {
+		this.use(lunr.ja);
                 this.ref("uri");
                 this.field('title', {
 		    boost: 15
